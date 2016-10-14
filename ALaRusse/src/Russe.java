@@ -1,24 +1,24 @@
 
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Russe {
 	public static int arusse(int a, int b) {
-		int[] x, y;
+		List<Integer> x, y;
 		int i = 1, prod = 0;
-		x = new int[1000];
-		y = new int[1000];
-		x[1] = a;
-		y[1] = b;
+		x = new ArrayList<Integer>();
+		y = new ArrayList<Integer>();
+		x.set(1, a);
+		y.set(1, b);
 	    //comment
-		while (x[i] > 1) {
-			x[i + 1] = x[i] / 2;
-			y[i + 1] = y[i] + y[i];
+		while (x.get(i) > 1) {
+			x.set(i + 1, x.get(i) / 2);
+			//y[i + 1] = y[i] + y[i];
 			i = i + 1;
 		}
 		while (i > 0) {
-			if ((x[i] % 2) != 0)
-				prod = prod + y[i];
+			//if ((x[i] % 2) != 0)
+			//	prod = prod + y[i];
 			i = i - 1;
 		}
 		return prod;
