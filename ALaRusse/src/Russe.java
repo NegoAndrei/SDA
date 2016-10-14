@@ -10,7 +10,7 @@ public class Russe {
 		y = new int[1000];
 		x[1] = a;
 		y[1] = b;
-
+	    //comment
 		while (x[i] > 1) {
 			x[i + 1] = x[i] / 2;
 			y[i + 1] = y[i] + y[i];
@@ -23,7 +23,10 @@ public class Russe {
 		}
 		return prod;
 	}
-
+	public void f()
+	{
+		
+	}
 	public static void main(String[] args) {
 		
 		System.out.println("Se efectueaza inmultirea a doua numere:");
